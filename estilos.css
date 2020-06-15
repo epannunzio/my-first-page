@@ -213,7 +213,7 @@ margin-left: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: coral;
+  background-color: white;
   height: 180px;
   width: 100%;
   transform: rotateY(180deg);
