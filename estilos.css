@@ -156,13 +156,11 @@ a:hover {
 }
 
 .sobre .avatar {
-clip-path: polygon(40% 0%, 40% 20%, 100% 7%, 100% 89%, 40% 80%, 40% 100%, 0% 50%);
 margin-left: 2em;
 }
 
 @media (min-width: 600px) {
-  .sobre .avatar {
-    clip-path: polygon(40% 0%, 40% 20%, 100% 7%, 100% 89%, 40% 80%, 40% 100%, 0% 50%); 
+  .sobre .avatar { 
     float: right;
   }
 }
