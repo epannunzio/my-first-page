@@ -9,6 +9,7 @@
 body {
     background-image: url('https://wallpapercave.com/wp/wp4470190.jpg');
     background-size: auto 100vh;
+    background-attachment: fixed;
     font-family:'Handlee', cursive;
     height: 100vh; 
     font-size: 12px;
