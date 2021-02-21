@@ -1,5 +1,4 @@
-  
-/* soft reset do css */
+ /* soft reset do css */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background-image: url('https://wallpapercave.com/wp/wp4470190.jpg');
+    background-image: url('https://miro.medium.com/max/2800/0*75NoRWqv6BL4rH0T.jpg');
     background-size: auto 100vh;
     font-family:'Handlee', cursive;
     height: 100vh; 
@@ -168,7 +167,7 @@ margin-left: 2em;
 
 .portfolio .grid {
   display: grid;
-  gap: 2em;
+  grid-gap: 2em;
 }
 
 @media (min-width: 560px) {
@@ -250,8 +249,4 @@ margin-left: 2em;
 .contato a:hover {
 text-decoration:none;
 text-shadow: 0px 0px 20px coral;
-}
-
-#copyright {
-  color:white;
 }
