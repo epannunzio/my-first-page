@@ -6,15 +6,16 @@
     <meta name="keywords" content="HTML, CSS, Frontend developer">
     <meta name="description" content="Desenvolvimento de web sites, páginas da web">
     <title>A Front-End Lover</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Handlee&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-inverse" style="background-color: rgba(0, 0, 0, 0.459);">
-            <a class="navbar-brand" href="#" style="font-family: 'Courgette', cursive;">Edilza Pannunzio</a>
+            <a class="navbar-brand" href="#">Edilza Pannunzio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,29 +30,48 @@
         <div class="titulo">
             <h1 class="site-title">Edilza Pannunzio</h1>
             <h2 class="site-subtitle">Dev Front-End Jr.</h2>
-        </div>   
+        </div>  
     </header>
-<section class="sobre container">
-    <h2>Sobre mim</h2>
-    <figure class="avatar">
-        <img src="img/Edilza.jpg" alt="Edilza Pannunzio" style="border-radius: 20%;">
-    </figure>
-    <p class="about">
-        Olá, meu nome é Edilza Rodrigues Pannunzio, aprendiz no mundo da programação, apaixonada por Front End (JS/ HTML / CSS e afins), amo esse trabalho! 
-    </p>
 
-    <p class="about">
-        Estudante (atualmente na área de análises de desenvolvimento de sistemas) e constantemente na área de web design, UI e tudo que esse mundo tem pra ensinar! Ainda há muito oque aprender, porém o começo de tudo é sempre o mais dificil, então meu lema é "never surrender"! O céu é o limite! 
-    </p>
+    <section class="sobre container">
+        <button class="btn-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBoasVindas">
+            Seja bem-vindo!
+        </button> 
+    
+        <!-- Modal de Boas-Vindas -->
+        <div class="modal fade" id="modalBoasVindas" tabindex="-1" role="dialog" aria-labelledby="modalBoasVindasLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title" id="modalBoasVindasLabel">Bem-Vindo ao meu primeiro Site!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Obrigada por visitar meu site. Espero que você tenha uma experiência incrível!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <p class="about">
-        Se você tem um projeto, entre em contato! Com certeza posso te ajudar! Dá uma olhadinha no meu portfólio aqui ó >>><a href="https://www.behance.net/edilzapannunzio"> Já tenho alguns projetos bem bacanas finalizados que podem ser interessantes caso você precise de inspiração!</a>
-    </p>
-
-    <p class="about">
-       É isso! Obrigada pela visita e a gente se fala em breve... 
-    </p>   
-</section>
+        <h2>Sobre mim</h2>
+        <figure class="avatar">
+            <img src="./assets/img/Edilza.jpg" alt="Edilza Pannunzio">
+        </figure>
+        <p class="about">
+            Olá, meu nome é Edilza Rodrigues Pannunzio, dev front-end Jr. apaixonada pelo mundo da programação, amo meu trabalho! 
+        </p>
+        <p class="about">
+        Formada em análise e desenvolvimento de sistemas, trabalho com web design e desenvolvimento de softwares! Ainda há muito oque aprender, então meu lema é "never surrender"! 
+        </p>
+        <p class="about">
+            Se você tem um projeto, entre em contato! Com certeza posso te ajudar! Dá uma olhadinha no meu portfólio >>><a href="https://www.behance.net/edilzapannunzio"> aqui. </a> Tenho alguns projetos bem bacanas finalizados que podem ser interessantes caso você precise de inspiração!
+        </p>
+        <p class="about">
+        É isso! Obrigada pela visita e a gente se fala em breve... 
+        </p>   
+    </section>
     
     <section class="portfolio container" id="portfolio">
         <h2>Alguns projetos</h2>
@@ -61,7 +81,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                     <img class="img-portfolio" src="img/meu%20site.jpg" alt="meu portfolio">
+                     <img class="img-portfolio" src="./assets/img/meu%20site.jpg" alt="meu portfolio">
                        <figcaption>Meu site</figcaption>
                     </figure>
                     <div class="card-back">
@@ -73,7 +93,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                       <img class="img-portfolio" src="img/summer.jpg" alt=">página de uma sorveteria">
+                       <img class="img-portfolio" src="./assets/img/summer.jpg" alt=">página de uma sorveteria">
                        <figcaption>Summer Açaí</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -85,7 +105,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/Lu Fotografia.jpg" alt="página sobre fotografia">
+                        <img class="img-portfolio" src="./assets/img/Lu Fotografia.jpg" alt="página sobre fotografia">
                         <figcaption>Lu Antal Fotografia</figcaption>
                     </figure>
                     <div class="card-back">
@@ -97,7 +117,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/free%20fire.jpg" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/free%20fire.jpg" alt="página sobre games">
                         <figcaption>LP Free Fire</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -109,7 +129,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/alfaiataria.jpg" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/alfaiataria.jpg" alt="página sobre games">
                         <figcaption>Projeto Alfaiataria</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -121,7 +141,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/arquitetura.jpg" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/arquitetura.jpg" alt="página sobre games">
                         <figcaption>Projeto Arquitetura</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -133,7 +153,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/curso1.png" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/curso1.png" alt="página sobre games">
                         <figcaption>Projeto cursos online</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -145,7 +165,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/fashion1.png" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/fashion1.png" alt="página sobre games">
                         <figcaption>Projeto Fashion</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -157,7 +177,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/gatito1.png" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/gatito1.png" alt="página sobre games">
                         <figcaption>Projeto Pet Shop</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -169,7 +189,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/projetoude.png" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/projetoude.png" alt="página sobre games">
                         <figcaption>Projeto Step bu step</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -181,7 +201,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/strata.png" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/strata.png" alt="página sobre games">
                         <figcaption>Projeto Strata</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -193,7 +213,7 @@
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
-                        <img class="img-portfolio" src="img/googleglass.jpg" alt="página sobre games">
+                        <img class="img-portfolio" src="./assets/img/googleglass.jpg" alt="página sobre games">
                         <figcaption>Projeto Google Glass</figcaption>
                     </figure> 
                     <div class="card-back">
@@ -212,13 +232,12 @@
             <a target="_blank" href="https://www.instagram.com/onechance32/">
                 <i class="fab fa-instagram-square"></i>
             </a>
-            <a target="_blank"
-            href="https://www.linkedin.com/in/edilza-rodrigues-pannunzio-02205bb1/">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:edilza_rodrigues@hotmail.com">
-            <i class="fas fa-envelope-square"></i>
-        </a>
+            <a target="_blank" href="https://www.linkedin.com/in/edilza-rodrigues-pannunzio-02205bb1/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:edilza_rodrigues@hotmail.com">
+                <i class="fas fa-envelope-square"></i>
+            </a>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.364552673604!2d-46.538496585540464!3d-23.662917671234464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42f4b88dea73%3A0x7987bd4caa905ba3!2sR.%20do%20Bosque%20-%20Vila%20Bastos%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009040-280!5e0!3m2!1spt-BR!2sbr!4v1622740440776!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
@@ -229,10 +248,12 @@
         </div>    
     </footer>
    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/f57509e80c.js" crossorigin="anonymous"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/f57509e80c.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
 
